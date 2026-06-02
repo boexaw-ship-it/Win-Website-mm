@@ -1,0 +1,38 @@
+{
+  "name": "WIN MYEIK SHOP – မြိတ်ထွက် ပင်လယ်ကုန်",
+  "short_name": "Win Myeik",
+  "description": "မြိတ်ထွက် ပုဇွန်ခြောက်၊ ငါးခြောက်၊ ငပိ နှင့် ပင်လယ်ကုန်စစ်စစ်",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF7ED",
+  "theme_color": "#F97316",
+  "lang": "my",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "food"],
+  "shortcuts": [
+    {
+      "name": "ကုန်ပစ္စည်းများ",
+      "url": "/index.html#products",
+      "description": "ကုန်ပစ္စည်းများ ကြည့်ရှုရန်"
+    },
+    {
+      "name": "Telegram မှာယူ",
+      "url": "https://t.me/YOUR_TELEGRAM_USERNAME",
+      "description": "Telegram မှ တိုက်ရိုက် မှာယူရန်"
+    }
+  ]
+}
