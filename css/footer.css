@@ -1,0 +1,99 @@
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#111827;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:30px 20px;
+}
+
+/* ==========================
+   FOOTER TEXT
+========================== */
+
+footer p{
+
+    margin:6px 0;
+
+    font-size:15px;
+
+    line-height:1.8;
+}
+
+/* ==========================
+   FOOTER LINKS
+========================== */
+
+.footer-links{
+
+    margin-top:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+
+    color:#f97316;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+
+    color:#ffffff;
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+.footer-copy{
+
+    margin-top:15px;
+
+    font-size:14px;
+
+    color:#d1d5db;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    footer{
+
+        padding:25px 15px;
+    }
+
+    footer p{
+
+        font-size:14px;
+    }
+
+    .footer-links{
+
+        gap:10px;
+    }
+
+}
+

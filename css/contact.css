@@ -1,0 +1,187 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+#contact{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================
+   CONTACT GRID
+========================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+}
+
+/* ==========================
+   CONTACT CARD
+========================== */
+
+.contact-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   CARD TITLE
+========================== */
+
+.contact-card h3{
+
+    color:#f97316;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+}
+
+/* ==========================
+   CONTACT ITEMS
+========================== */
+
+.contact-item{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#333;
+
+    background:#f8f8f8;
+
+    padding:14px 16px;
+
+    margin-bottom:12px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.contact-item:hover{
+
+    background:#f97316;
+
+    color:#fff;
+}
+
+/* ==========================
+   PHONE LINK
+========================== */
+
+.contact-item[href^="tel"]{
+
+    font-weight:bold;
+}
+
+/* ==========================
+   ADDRESS BOX
+========================== */
+
+.address-box{
+
+    margin-top:10px;
+
+    padding:14px;
+
+    background:#fff7ed;
+
+    border-left:4px solid #f97316;
+
+    border-radius:10px;
+
+    color:#444;
+}
+
+/* ==========================
+   WORKING HOURS
+========================== */
+
+.contact-hours{
+
+    margin-top:12px;
+
+    color:#666;
+
+    font-size:14px;
+}
+
+/* ==========================
+   MAP BUTTON
+========================== */
+
+.map-btn{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:12px 18px;
+
+    background:#f97316;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.map-btn:hover{
+    opacity:.9;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    #contact{
+        padding:40px 15px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-card{
+        padding:20px;
+    }
+
+    .contact-card h3{
+        font-size:20px;
+    }
+
+}
+

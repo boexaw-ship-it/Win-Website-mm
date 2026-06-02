@@ -1,0 +1,163 @@
+/* ==========================
+   BANNER SECTION
+========================== */
+
+#banner{
+    padding:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ==========================
+   SLIDER WRAPPER
+========================== */
+
+.slider-wrapper{
+    position:relative;
+    overflow:hidden;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+/* ==========================
+   SLIDER TRACK
+========================== */
+
+.slider-track{
+    display:flex;
+    transition:transform .5s ease-in-out;
+}
+
+
+/* ==========================
+   SLIDER IMAGE
+========================== */
+
+.slider-track img{
+    width:100%;
+    min-width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+    display:block;
+}
+
+
+/* ==========================
+   PREV / NEXT BUTTON
+========================== */
+
+.slider-prev,
+.slider-next{
+
+    position:absolute;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.45);
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:10;
+}
+
+.slider-prev:hover,
+.slider-next:hover{
+    background:#f97316;
+}
+
+.slider-prev{
+    left:12px;
+}
+
+.slider-next{
+    right:12px;
+}
+
+
+/* ==========================
+   DOTS
+========================== */
+
+.slider-dots{
+
+    position:absolute;
+
+    left:50%;
+    bottom:15px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:10px;
+
+    z-index:10;
+}
+
+.slider-dots span{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.7);
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.slider-dots span.active{
+    background:#f97316;
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    #banner{
+        padding:10px;
+    }
+
+    .slider-track img{
+        height:220px;
+    }
+
+    .slider-prev,
+    .slider-next{
+
+        width:35px;
+        height:35px;
+
+        font-size:18px;
+    }
+
+    .slider-dots span{
+
+        width:10px;
+        height:10px;
+    }
+
+}
+
