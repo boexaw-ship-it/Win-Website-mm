@@ -8,8 +8,9 @@ const products = [
     name: "ပုဇွန်ခြောက်",
     image: "images/products/pouzun.jpg",
     prices: [
-      "၁ ပိသာ - 45,000 ကျပ်",
-      "၃ ပိသာ - 130,000 ကျပ်"
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
     ]
   },
 
@@ -17,33 +18,59 @@ const products = [
     name: "ငါးခြောက်",
     image: "images/products/nga.jpg",
     prices: [
-      "၁ ပိသာ - 18,000 ကျပ်",
-      "၃ ပိသာ - 50,000 ကျပ်"
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
     ]
   },
 
   {
-    name: "ငပိ",
+    name: "မျှင်ငပိ",
     image: "images/products/ngapi.jpg",
     prices: [
-      "၁ ဘူး - 8,000 ကျပ်",
-      "၃ ဘူး - 22,000 ကျပ်"
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
     ]
   },
 
   {
-    name: "ကဏန်းခြောက်",
-    image: "images/products/crab.jpg",
+    name: "ငပိထောင်း",
+    image: "images/products/ngapi-htaung.jpg",
     prices: [
-      "၁ ပိသာ - 30,000 ကျပ်"
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
     ]
   },
 
   {
-    name: "ငါးမုန့်ခြောက်",
-    image: "images/products/fish-snack.jpg",
+    name: "သီဟိုစေ့",
+    image: "images/products/cashew.jpg",
     prices: [
-      "၁ ထုပ် - 5,000 ကျပ်"
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
+    ]
+  },
+
+  {
+    name: "ရေခူ",
+    image: "images/products/jellyfish.jpg",
+    prices: [
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
+    ]
+  },
+
+  {
+    name: "ဒူရင်းယို",
+    image: "images/products/durian-jam.jpg",
+    prices: [
+      "၁၀ သား - XXXX ကျပ်",
+      "၅၀ သား - XXXX ကျပ်",
+      "၁ ပိသာ - XXXX ကျပ်"
     ]
   }
 
@@ -54,7 +81,9 @@ const products = [
    RENDER PRODUCTS
 ========================== */
 
-const productsGrid = document.querySelector(".products-grid");
+const productsGrid =
+  document.querySelector(".products-grid");
+
 
 function renderProducts() {
 
@@ -64,7 +93,8 @@ function renderProducts() {
 
   products.forEach(product => {
 
-    const card = document.createElement("div");
+    const card =
+      document.createElement("div");
 
     card.className = "product-card";
 
@@ -107,4 +137,3 @@ document.addEventListener(
   "DOMContentLoaded",
   renderProducts
 );
-
