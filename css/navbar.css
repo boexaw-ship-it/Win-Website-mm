@@ -2,92 +2,100 @@
    NAVBAR
 ========================== */
 
-#navbar{
-    position:sticky;
-    top:0;
-    left:0;
-    width:100%;
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding:15px 25px;
+    padding: 15px 25px;
 
-    background:#ffffff;
+    background: #f97316;
 
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 12px rgba(249,115,22,.35);
 
-    z-index:999;
+    z-index: 999;
 }
+
 
 /* ==========================
    LOGO
 ========================== */
 
-.logo{
-    font-size:22px;
-    font-weight:700;
-    color:#f97316;
-    letter-spacing:.5px;
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: .5px;
 }
+
 
 /* ==========================
    NAV LINKS
 ========================== */
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.nav-links a{
-    text-decoration:none;
-    color:#333;
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255,255,255,.85);
 
-    font-size:15px;
-    font-weight:600;
+    font-size: 15px;
+    font-weight: 600;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.nav-links a:hover{
-    color:#f97316;
+.nav-links a:hover {
+    color: #ffffff;
 }
 
-/* Active Link */
 
-.nav-links a.active{
-    color:#f97316;
+/* ==========================
+   ACTIVE LINK
+========================== */
+
+.nav-links a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2px;
 }
+
 
 /* ==========================
    MOBILE
 ========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    #navbar{
-        flex-direction:column;
-        gap:12px;
-        padding:15px;
+    #navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
     }
 
-    .logo{
-        font-size:20px;
-        text-align:center;
+    .logo {
+        font-size: 20px;
+        text-align: center;
     }
 
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
-    .nav-links a{
-        font-size:14px;
+    .nav-links a {
+        font-size: 14px;
+        color: rgba(255,255,255,.9);
     }
 
 }
-
