@@ -60,51 +60,132 @@
 
 
 /* ==========================
-   PRODUCT IMAGE
+   PHOTO WRAPPER
 ========================== */
 
-.product-card img {
+.card-photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+.card-photo {
     width: 100%;
     height: 260px;
     object-fit: cover;
     display: block;
-    transition: .3s;
-}
-
-.product-card img:hover {
-    transform: scale(1.03);
+    opacity: 1;
+    transition: opacity .2s ease;
 }
 
 
 /* ==========================
-   PRODUCT INFO
+   PREV / NEXT BUTTONS
 ========================== */
 
-.product-info {
-    padding: 0 0 18px 0;
-}
+.card-prev,
+.card-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-
-/* ==========================
-   PRODUCT NAME – COLOR PLATE
-========================== */
-
-.product-info h3 {
-    font-size: 20px;
+    background: rgba(0,0,0,.35);
     color: #fff;
-    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
 
-    /* Color plate */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .2s;
+    z-index: 10;
+}
+
+.card-prev { left: 8px; }
+.card-next { right: 8px; }
+
+.card-prev:hover,
+.card-next:hover {
+    background: rgba(249,115,22,.85);
+}
+
+
+/* ==========================
+   DOTS
+========================== */
+
+.card-dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.card-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card-dot.active {
+    background: #fff;
+    transform: scale(1.3);
+}
+
+
+/* ==========================
+   PRODUCT NAME FRAME
+========================== */
+
+.product-name-frame {
     background: linear-gradient(
         135deg,
         #f97316 0%,
         #ea6000 100%
     );
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
-    padding: 14px 18px;
+    /* Frame border effect */
+    border-top: 3px solid rgba(255,255,255,.25);
+    border-bottom: 3px solid rgba(0,0,0,.1);
+}
 
-    /* မပြတ် ပုံနှင့် ဆက်တိုက် */
-    margin-top: 0;
+.product-name-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-shadow: 0 1px 3px rgba(0,0,0,.2);
+
+    /* Decorative lines */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-name-text::before,
+.product-name-text::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: rgba(255,255,255,.6);
+    border-radius: 2px;
 }
 
 
@@ -112,11 +193,14 @@
    PRICE LIST
 ========================== */
 
+.product-info {
+    padding: 14px 18px 18px;
+}
+
 .price-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 0 18px;
 }
 
 .price-list span {
@@ -126,11 +210,12 @@
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
+    border-left: 3px solid #f97316;
 }
 
 
 /* ==========================
-   ANIMATION SUPPORT
+   ANIMATION
 ========================== */
 
 .hidden {
@@ -150,11 +235,9 @@
 ========================== */
 
 @media (max-width: 992px) {
-
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
@@ -176,12 +259,12 @@
         grid-template-columns: 1fr;
     }
 
-    .product-card img {
+    .card-photo {
         height: 220px;
     }
 
-    .product-info h3 {
-        font-size: 18px;
+    .product-name-text {
+        font-size: 16px;
     }
 
 }
